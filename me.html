@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>HTML FORM</title>
+   <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+        background-color: rgb(235, 219, 199);    }
+    form{
+        
+        width: 400px;
+        background-color: rgb(235, 232, 228);
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 10 10 10px rgb(110, 75, 30);
+    }
+    fieldset {
+         
+         border:  1px double;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+         border-radius: 6px;
+         
+    }
+     legend{
+         font-family: serif;
+        padding:1px;
+        text-align: center;
+    }
+   label{
+        padding-top: 5px ;
+        padding-bottom :5px;
+        display: block;
+       
+        font-family:'Courier New', Courier, monospace;
+   }
+   input[type="text"],
+    input[type="email"],
+    input[type="password"],input[list],
+    input[type="date"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #c5a6a6;
+        border-radius: 4px;
+         }
+    textarea{
+        width:30px;
+        height: 6-px;
+    }
+    input[type="radio"] {
+       margin-left: 20px;
+        }
+
+    input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+            }
+   
+   </style>
+</head>
+<body><form>
+    <fieldset>
+        <legend>NAYAE ADMI K LIE FORM </legend>
+        <label>
+        ENTER YOUR NAME :
+        </label>
+        <input type="text" name="name"/>
+        <label>Your post</label>
+        <input list="post">
+        <datalist id="post">
+        <option value="student">
+        <option value="Teacher">
+        <option value="Staff">
+        </datalist>       
+         <label>
+        Enter your mail :
+        </label>
+       <input type="email" name="mailwa"/>
+       <label>
+        Create password :
+       </label>
+       <input type="password"  name="pass"/>
+       <label>
+        Repeat the password :
+       </label>
+       <input type="password" name="pass"
+       <label>
+        Date of birth :
+       </labe>
+       <input type="date" name="dob"/>
+       <label>
+       Gender:
+       </label>
+       <input type="radio" name="g1" value="Female"/>Female
+       <input type="radio" name="g2" value="Male"/>Male
+       <input type="radio" name="g3" value="Others"/>Others
+        <label>
+        Address :
+        </label>
+        <input type="text"><br>
+        <a href="https://puginarug.com/"><input type="submit" value="submit"/></a>
+    </fieldset></form>
+</body>
+</html>
